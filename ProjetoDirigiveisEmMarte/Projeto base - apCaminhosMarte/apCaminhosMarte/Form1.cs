@@ -49,8 +49,8 @@ namespace apCaminhosMarte
             }
 
             solucionador = new Solucionador(grafo);//instancia da classe solucionador, passando como parametro o grafo construido a partir das cidades do aruivo texto
-            solucionador.Soluciona(origem.CodCidade, destino.CodCidade);//chama o método que busca todos os caminhos entre a origem e o destino
-
+            //solucionador.Soluciona(origem.CodCidade, destino.CodCidade);//chama o método que busca todos os caminhos entre a origem e o destino
+            solucionador.SolucionaDjikstra(22);
             List<List<Caminho>> caminhos = solucionador.Caminhos;//lista com todos os caminhos achados pelo solucionador
 
             dgvCaminhos.Rows.Clear();//remove todas as linhas existentes

@@ -41,7 +41,7 @@ namespace apCaminhosMarte
 
                 //quando é possivel ir de uma cidade a outra, guardamos os dados do caminho na posição
                 //respectiva na matriz adjacente
-                matrizAdjacente[codOrigem,codDestino] = new Caminho(codOrigem, codDestino, distancia, tempo,custo); //armazenamos o caminho
+                matrizAdjacente[codOrigem,codDestino] = new Caminho(codOrigem, codDestino, distancia, tempo,  custo); //armazenamos o caminho
                 matrizAdjacente[codDestino, codOrigem] = new Caminho(codDestino, codOrigem, distancia, tempo, custo);//armazenamos o caminho inverso para que seja possivel ir e voltar entre as cidades
 
                 linha = arquivo.ReadLine();

@@ -38,6 +38,11 @@ namespace apCaminhosMarte
             visitou = new bool[grafo.QuantasCidades];//inicia um vetor com o numero de cidades respectivas
         }
         
+        public void SolucionaDjikstra(int origem)
+        {
+            Dijkstra solucionador = new Dijkstra(grafo, 1, origem);
+            solucionador.Resolva();
+        }
         public void Soluciona(int origem, int destino)
         {
             //usa o 'for' para verificar para quais cidades se pode andar
